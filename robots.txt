@@ -1,4 +1,4 @@
-Sitemap: https://mctoolkit.bananabrother77.online/sitemap.xml
+Sitemap: https://mctoolkit.bananabrother77.dev/sitemap.xml
 
 User-agent: *
 Allow: /

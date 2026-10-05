@@ -5,7 +5,7 @@ function updateLegalLinks() {
     const page = link.dataset.legalPage;
     const suffix = currentLang === 'de' ? '-de' : '';
     
-    link.href = `https://bananabrother77.online/${page}${suffix}`;
+    link.href = `https://bananabrother77.dev/${page}${suffix}`;
   });
 }
 

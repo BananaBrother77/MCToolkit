@@ -1,6 +1,6 @@
 import { toggleLanguage } from './translations.js';
 
-const COOKIE_DOMAIN = '.bananabrother77.online';
+const COOKIE_DOMAIN = '.bananabrother77.dev';
 
 function getCookie(name) {
   const match = document.cookie.match(new RegExp(`(?:^|;\\s*)${name}=([^;]*)`));
