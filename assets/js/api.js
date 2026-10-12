@@ -13,12 +13,12 @@ async function fetchWithTimeout(url, timeoutMs = 8000) {
 }
 
 export async function fetchServerData(serverIP) {
-  return fetchWithTimeout(`https://api.mcstatus.io/v2/status/java/${serverIP}`);
+  return fetchWithTimeout(`/api/status?host=${encodeURIComponent(serverIP)}`);
 }
 
 export async function fetchBedrockServerData(serverIP) {
   return fetchWithTimeout(
-    `https://api.mcstatus.io/v2/status/bedrock/${serverIP}`,
+    `/api/status?host=${encodeURIComponent(serverIP)}&bedrock=true`,
   );
 }
 
@@ -38,7 +38,7 @@ export function getSkinModel(player) {
 
     if (!prop) return 'default';
     const decoded = JSON.parse(atob(prop.value));
-    
+
     return decoded.textures?.SKIN?.metadata?.model === 'slim'
       ? 'slim'
       : 'default';
