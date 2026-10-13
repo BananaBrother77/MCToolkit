@@ -1,14 +1,13 @@
-# MCToolkit
+# MCServerStatus
 
-A collection of Minecraft tools — check server status, look up players, browse colour codes, and more.
+Check the live status of any Minecraft server — online players, version, MOTD, server icon, saved servers, MCServerHost node status, and player lookups.
 
-## Tools
+## Features
 
-| Tool | Description |
-|------|-------------|
-| [Server Status](/server-status.html) | Check live Minecraft server status — online players, version, MOTD, server icon, saved servers, and MCServerHost node status. |
-| [Player Viewer](/player-viewer.html) | Look up any Minecraft player — view their skin in 3D, UUID, name history, cape, and link to NameMC. |
-| [Colour Codes](/color-codes.html) | Browse Minecraft colour and format codes, then create formatted text for chat, signs, books, and more. |
+- **Server Status** — ping any Java or Bedrock server and see online players, version, MOTD, and icon.
+- **Saved Servers** — keep a list of servers with favourites and quick switching.
+- **Node Status** — live MCServerHost node metrics (latency, uptime, CPU, memory, storage).
+- **Player Lookup** — look up a player's UUID and skin, rendered in 3D.
 
 ## Development
 
@@ -24,7 +23,7 @@ npm run deploy   # Build + deploy to Cloudflare Pages
 - **Build:** [Vite](https://vitejs.dev/) with multi-page HTML input
 - **Partials:** EJS includes resolved at build time via `transformIndexHtml`
 - **Deploy:** [Cloudflare Pages](https://pages.cloudflare.com/) via [Wrangler](https://developers.cloudflare.com/workers/wrangler/)
-- **3D Rendering:** [skinview3d](https://github.com/bs-community/skinview3d) for player skin viewer
+- **3D Rendering:** [skinview3d](https://github.com/bs-community/skinview3d) for the player skin viewer
 - **Icons:** [Lucide](https://lucide.dev/)
 
 Built by [BananaBrother77](https://github.com/BananaBrother77).

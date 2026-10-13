@@ -4,7 +4,6 @@
 Bye/
 node_modules/
 dist/
-tools.md
 
 .dev.vars*
 !.dev.vars.example

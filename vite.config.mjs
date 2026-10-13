@@ -20,9 +20,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(import.meta.dirname, 'index.html'),
-        'color-codes': resolve(import.meta.dirname, 'color-codes.html'),
-        'server-status': resolve(import.meta.dirname, 'server-status.html'),
-        'player-viewer': resolve(import.meta.dirname, 'player-viewer.html'),
         '404': resolve(import.meta.dirname, '404.html'),
       },
     },

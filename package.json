@@ -1,7 +1,7 @@
 {
-  "name": "mctoolkit",
+  "name": "mcserverstatus",
   "version": "1.0.0",
-  "description": "Minecraft server status, Modrinth browser, and more tools.",
+  "description": "Check the live status of any Minecraft server - online players, version, MOTD, node status, and more.",
   "scripts": {
     "dev": "wrangler pages dev --port 8789 -- vite",
     "build": "vite build",
